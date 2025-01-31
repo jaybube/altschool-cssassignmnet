@@ -100,7 +100,6 @@ body {
     background-color: #f8f9fb;
     display: flex;
     justify-content: center;
-    align-items: center;
     line-height: 30px;
     height: 100vh;
 }
