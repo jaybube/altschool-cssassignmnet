@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fb;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo img {
+    width: 200px;
+    margin-right: 8px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.account-btn {
+    padding: 8px 15px;
+    border: 2px solid #6b7280;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.account-btn:hover {
+    background-color: #f0f0f0;
+}
+ 
+.navbar > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .account-btn {
+        margin-top: 10px;
+    }
+}
+
+
+/* end of navbar */
+
+
+
+/* Main Container */
+
+.section__details{
+    background-color: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    background-color: white;
+    width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Left Section */
+.checkout-form {
+    width: 60%;
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.section {
+    margin-bottom: 25px;
+    margin-top: 70px;
+}
+.sections{
+    margin-top: 50px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 span {
+    color: #0073e6;
+    font-size: 18px;
+    margin-right: 8px;
+    border: 2px solid #0073e6;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Input Styles */
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Card Input */
+.card-input {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.card-input input {
+    flex: 1;
+}
+
+/* Purchase Button */
+.purchase-btn {
+    width: 100%;
+    background-color: #007c5a;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.purchase-btn:hover {
+    background-color: #005f45;
+}
+
+/* Help Text */
+.help-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.help-text a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.help-text a:hover {
+    text-decoration: underline;
+}
+
+/* Stripe Badge */
+.stripe-badge {
+    margin-top: 10px;
+    text-align: center;
+    background: #566473;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+ 
+/* Sidebar */
+.sidebar {
+    width: 40%;
+    background-color: #0073e6;
+    color: white;
+    padding: 30px;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.price span {
+    font-size: 16px;
+}
+
+.renew {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.features {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.features li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.switch-plan {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.switch-plan a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+blockquote {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user-info img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: right;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .checkout-form, .sidebar {
+        width: 100%;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .card-input {
+        flex-direction: column;
+    }
+}

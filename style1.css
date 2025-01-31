@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: sans-serif;
+}
+
+.card {
+  background-color: rgb(13, 14, 14);
+  border: 10px solid #d2cdcd;
+  height: 500px;
+  text-align: center;
+  margin: 40px 60px;
+}
+
+.card1 {
+  margin: 50px 80px;
+}
+
+.top {
+  background-color: #ee2395;
+  border-radius: 5px;
+  color: black;
+  max-width: 350px;
+  padding: 10px 0;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.end {
+  background-color: white;
+  height: 150px;
+  max-width: 320px;
+  padding: 60px 40px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  transform: translate(-5%, -20%);
+}
